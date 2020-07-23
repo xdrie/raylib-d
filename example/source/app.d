@@ -2,8 +2,7 @@ import std.stdio;
 
 import raylib;
 
-void main()
-{
+void main() {
   writeln("Starting a raylib example.");
 
   // test raymath
@@ -14,14 +13,11 @@ void main()
   scope (exit)
     CloseWindow(); // see https://dlang.org/spec/statement.html#scope-guard-statement
 
-  while (!WindowShouldClose())
-  {
+  while (!WindowShouldClose()) {
     BeginDrawing();
-    scope (exit)
-      EndDrawing();
-
     ClearBackground(RAYWHITE);
     DrawText("Hello, World!", 330, 300, 28, BLACK);
+    EndDrawing();
   }
 
   writeln("Ending a raylib example.");
