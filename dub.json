@@ -1,9 +1,10 @@
 {
-	"name": "raylib-d",
+	"name": "re-raylib-d",
 	"description": "D binding for Raylib",
 	"license": "Zlib",
 	"authors": [
-		"ONROUNDIT"
+		"ONROUNDIT",
+		"xdrie"
 	],
 	"copyright": "Copyright (c) Ramon Santamaria (@raysan5), Petro Romanovych (@onroundit), Jan Hoenig (@m3m0ry)",
 	"configurations": [
