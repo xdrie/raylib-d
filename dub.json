@@ -15,5 +15,5 @@
             }
         }
     ],	
-	"targetType": "sourceLibrary"
+	"targetType": "staticLibrary"
 }
