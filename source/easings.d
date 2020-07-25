@@ -80,7 +80,7 @@
 **********************************************************************************************/
 
 extern (C):
-pragma(inline, true): // NOTE: By default, compile functions as static inline
+pragma(inline): // NOTE: By default, compile functions as static inline
 
 import core.stdc.math; // Required for: sinf(), cosf(), sqrt(), pow()
 
