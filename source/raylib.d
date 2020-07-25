@@ -178,60 +178,6 @@ struct Vector3
     mixin Linear;
 }
 
-// Bivector3 type
-/// Beware of the field order
-/// xy is the first field
-struct Bivector3
-{
-    float xy = 0.0f;
-    float yz = 0.0f;
-    float zx = 0.0f;
-    mixin Linear;
-}
-
-// Rotor type
-struct Rotor3
-{
-    float a = 1.0f;
-    float xy = 0.0f;
-    float yz = 0.0f;
-    float zx = 0.0f;
-    mixin Linear;
-
-    alias i = yz;
-    alias j = zx;
-    alias k = xy;
-
-    @property Bivector3 b()
-    {
-        return Bivector3(xy, yz, zx);
-    }
-
-    @property Bivector3 b(Bivector3 _b)
-    {
-        xy = _b.xy;
-        yz = _b.yz;
-        zx = _b.zx;
-        return _b;
-    }
-
-    this(float _a, Bivector3 _b)
-    {
-        a = _a;
-        b = _b;
-    }
-
-    this(float _a, float _xy, float _yz, float _zx)
-    {
-        a = _a;
-        xy = _xy;
-        yz = _yz;
-        zx = _zx;
-    }
-}
-
-alias Quaternion = Rotor3;
-
 // Vector4 type
 struct Vector4
 {
@@ -241,6 +187,9 @@ struct Vector4
     float w = 0.0f;
     mixin Linear;
 }
+
+// Quaternion type, same as Vector4
+alias Quaternion = Vector4;
 
 // Matrix type (OpenGL style 4x4 - right handed, column major)
 struct Matrix4
