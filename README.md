@@ -1,4 +1,7 @@
-![](raylib_logo.png)
+
+# NOTE; THIS HAS BEEN SUPERSEDED BY DRAY https://github.com/xdrie/dray
+
+
 
 # re-raylib-d [![DUB](https://img.shields.io/dub/v/re-raylib-d?style=for-the-badge)](https://code.dlang.org/packages/re-raylib-d)
 (static) D bindings for [raylib](https://www.raylib.com/), a simple and easy-to-use library to learn videogames programming. this is based on a [fork](https://github.com/xdrie/raylib) of raylib, and a fork of the original [raylib-d](https://github.com/onroundit/raylib-d).
